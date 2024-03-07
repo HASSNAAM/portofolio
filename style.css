@@ -769,13 +769,15 @@ footer p:nth-of-type(1) a {
 .detailes {
   background-color: #212529;
   min-height: 98vh;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   z-index: 1000;
   position: fixed;
-  top: 1vh;
-  left: 5%;
-  right: 5%;
+  top: 0;
+  left:0;
+  right: 0;
   padding: 30px;
+  overflow: auto;
 }
 .detailes h2 {
   font-size: 30px;
@@ -836,12 +838,10 @@ footer p:nth-of-type(1) a {
   margin-top: 20px;
 }
 .detailes .close{
-  position: relative;
   right: 0px;
-  top: 15px;
+  top: 25px;
   float: right;
   color: #ffffff80;
-  z-index: 1000;
   font-size: 25px;
   cursor: pointer;
   transition: all .3s ease-in-out;
@@ -856,8 +856,9 @@ footer p:nth-of-type(1) a {
   .detailes{
     padding-top: 10px;
     flex-direction: column;
+    overflow-y: scroll;
   }
-  .detailes .desc2 .img,  .detailes .desc .info{
+  .detailes .desc2 .img,  .detailes .desc2 .info{
     width: 100%;
   }
 }
