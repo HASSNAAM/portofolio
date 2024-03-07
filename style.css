@@ -766,3 +766,98 @@ footer p:nth-of-type(1) a {
     margin: 0 auto;
   }
 }
+.detailes {
+  background-color: #212529;
+  min-height: 98vh;
+  width: 90%;
+  z-index: 1000;
+  position: fixed;
+  top: 1vh;
+  left: 5%;
+  right: 5%;
+  padding: 30px;
+}
+.detailes h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.detailes .desc2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.detailes .desc2 .img {
+  width: 47.5%;
+}
+.detailes .desc2 .img img {
+  width: 100%;
+}
+.detailes .desc2 .info {
+  width: 47.5%;
+}
+.detailes .info h3 {
+  font-size: 23px;
+  font-weight: 500;
+  color: #fff;
+  margin: 30px 0 10px;
+}
+.detailes .info p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffff80;
+}
+.detailes .info > ul > li:not(:last-child) {
+  border-bottom: 1px solid #ffffff4a;
+  padding: 12px 0;
+}
+.detailes .info > ul > li:not(:last-child) {
+  color: #ffffff80;
+  font-size: 20px;
+}
+.detailes .info > ul li span {
+  color: #dee3e4;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.detailes .info > ul > li:not(:last-child) a{
+  color: #20c997;
+  display: inline-block;
+}
+.detailes i{
+  font-size: 20px;
+  color: #ffffff80;
+}
+.detailes .nested{
+  display: inline-flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.detailes .close{
+  position: relative;
+  right: 0px;
+  top: 15px;
+  float: right;
+  color: #ffffff80;
+  z-index: 1000;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.detailes .close:hover{
+  color: #fff;
+}
+.hidden{
+  display: none;
+}
+@media screen and (max-width:991px) {
+  .detailes{
+    padding-top: 10px;
+    flex-direction: column;
+  }
+  .detailes .desc2 .img,  .detailes .desc .info{
+    width: 100%;
+  }
+}
